@@ -1,47 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 	<link rel="stylesheet" href="style.css" />
-	<title>Tableau</title>
-
+	<title>Person - Etape 1</title>
 </head>
 <body>
-    <div class="table_container">
-    <table border="1">
-        <thead>
-            <tr>
-                <th class="col_number">N°</th>
-                <th class="col_text" id="nomcol">Nom</th>
-                <th class="col_text" id="prenomcol">Prénom</th>
-                <th class="col_number">Points</th>
-                <th class="col_chkbox">Select</th>
-            </tr>
-        </thead>
-        <tr>
-            <td class="col_number">1</td>
-            <td class="col_text">Nom1</td>
-            <td class="col_text">Prénom1</td>
-            <td class="col_number">5</td>
-            <td class="col_chkbox"><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td class="col_number">2</td>
-            <td class="col_text">Nom2</td>
-            <td class="col_text">Prénom2</td>
-            <td class="col_number">5</td>
-            <td class="col_chkbox"><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td class="col_number">3</td>
-            <td class="col_text">Nom3</td>
-            <td class="col_text">Prénom3</td>
-            <td class="col_number">5</td>
-            <td class="col_chkbox"><input type="checkbox"></td>
-        </tr>
-    </table>
+    <div id="table_container">
+        <table id="personTable" border="1">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Points</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody id="person_body">
+                <tr>
+                    <td class="col_number">1</td>
+                    <td class="col_text">Nom1</td>
+                    <td class="col_text">Prénom1</td>
+                    <td class="col_number">5</td>
+                    <td class="col_chkbox"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="col_number">2</td>
+                    <td class="col_text">Nom2</td>
+                    <td class="col_text">Prénom2</td>
+                    <td class="col_number">5</td>
+                    <td class="col_chkbox"><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td class="col_number">3</td>
+                    <td class="col_text">Nom3</td>
+                    <td class="col_text">Prénom3</td>
+                    <td class="col_number">5</td>
+                    <td class="col_chkbox"><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)">Ajouter</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

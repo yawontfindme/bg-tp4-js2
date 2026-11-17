@@ -1,0 +1,3 @@
+On pense qu'il serait impossible de protéger complètement le code source des utilisateurs.
+Mais si on a des instructions importantes à protèger, on peut garder le code sure le serveur
+principal ou utiliser certaines méthodes pour le rendre plus difficile à lire et à comprendre.

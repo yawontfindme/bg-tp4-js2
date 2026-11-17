@@ -1,55 +1,52 @@
 * {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    padding: 0;
+    padding: 24px;
+    background: #f5f6f8;
+}
+
+#table_container {
+    font-family: Calibri, Arial, sans-serif;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
-    width: 80%;
-    margin: 30px auto;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-thead {
-    background-color: blue;
-    color: white;
-    padding: 15px;
+th {
+    background: #007bbd;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
     text-align: center;
-    font-size: 16px;
 }
 
-.table_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 14px;
 }
 
 .col_number {
-    height: 30px;
-    width: 120px;
     text-align: center;
+    width: 70px;
 }
 
 .col_text {
-    height: 30px;
-    width: 500px;
     text-align: left;
-    padding-left: 10px;
-}
-
-#nomcol {
-    text-align: center;
-}
-
-#prenomcol {
-    text-align: center;
 }
 
 .col_chkbox {
-    height: 30px;
-    width: 120px;
     text-align: center;
+    width: 80px;
 }

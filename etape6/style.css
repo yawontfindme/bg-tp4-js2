@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f5f6f8;
+}
+
+#table_container {
+    font-family: Calibri, Arial, sans-serif;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #007bbd;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 14px;
+}
+
+.col_number {
+    text-align: center;
+    width: 70px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 80px;
+}
+
+#container_summary {
+    display: flex;
+    justify-content: space-between;
+    background: #efefef;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #444444;
+    border-top: 1px solid #dddddd;
+}
+
+#container_summary p {
+    margin: 10px 0;
+}
+
+#form_container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+
+.form_label {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.form_field {
+    flex: 1;
+    min-width: 0;
+    padding: 4px;
+    border: 1px solid #333333;
+}
+
+button {
+    padding: 6px 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-add {
+    background: #09b400;
+}
+
+.btn-del {
+    background: #ed0000;
+}
+
+.btn-consol {
+    background: #ad8201;
+}
+
+.btn-sort {
+    background: #545f67;
+}
+
+#container_btn {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 14px 12px;
+}
